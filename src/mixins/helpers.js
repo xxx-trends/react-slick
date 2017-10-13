@@ -82,7 +82,9 @@ var helpers = {
       slideHeight,
       listHeight,
     }, function () {
-
+      if (!this._mounted) {
+        return;
+      }
       var targetLeft = getTrackLeft(assign({
         slideIndex: this.state.currentSlide,
         trackRef: this.track
@@ -316,7 +318,7 @@ var helpers = {
   play: function(){
     var nextIndex;
 
-    if (!this.state.mounted) {
+    if (!this._mounted) {
       return false
     }
 
