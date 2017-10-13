@@ -1,6 +1,6 @@
 {
-  "name": "@xxx-trends/react-slick",
-  "version": "0.15.5",
+  "name": "react-slick",
+  "version": "0.15.6",
   "description": " React port of slick carousel",
   "main": "./lib",
   "files": [
